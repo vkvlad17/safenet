@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService {
         mailMessage.setTo(user.getEmail());
         mailMessage.setSubject("Complete Registration!");
         mailMessage.setText("To confirm your account, please click here : "
-                +"http://localhost:8080/auth/confirm-account?token="+confirmationToken.getCode());
+                +"https://safenet.onrender.com/auth/confirm-account?token="+confirmationToken.getCode());
         emailService.sendEmail(mailMessage);
         ///
         System.out.println("Confirmation Token: " + confirmationToken.getCode());

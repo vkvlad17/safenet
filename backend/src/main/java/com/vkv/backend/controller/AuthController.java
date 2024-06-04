@@ -51,7 +51,7 @@ public class AuthController {
     public ResponseEntity<?> confirmUserAccount(@RequestParam("token") String token) {
         ResponseEntity<?> responseEntity = userService.confirmUser(token);
         if (responseEntity.getStatusCode() == HttpStatus.OK) {
-            return ResponseEntity.status(HttpStatus.FOUND).header("Location", "http://localhost:3000/login").build();
+            return ResponseEntity.status(HttpStatus.FOUND).header("Location", "https://safenet.onrender.com/login").build();
         } else {
             return responseEntity;
         }
