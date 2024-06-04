@@ -45,7 +45,7 @@ public class AppConfig {
             cfg.setAllowedOrigins(List.of(
                     "http://localhost:3000/",
                     "http://localhost:3001/",
-                    "https://ecommerce-social-network.vercel.app/"
+                    "https://safenet-n9zaz7j95-vladyslavs-projects-6c95bf7f.vercel.app/"
             ));
             cfg.setAllowedMethods(Collections.singletonList("*"));
             cfg.setAllowCredentials(true);
